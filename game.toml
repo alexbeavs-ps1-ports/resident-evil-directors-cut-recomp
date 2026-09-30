@@ -1,0 +1,55 @@
+
+[game]
+name = "Resident Evil: Director's Cut"
+id = "SLES-00969"
+players = 1
+exe = "disc/SLES_009.69"
+disc = "disc/Resident Evil - Director's Cut (Europe).cue"
+load_address = "0x80010000"
+entry_pc = "0x8005F1B0"
+text_size = "0x0009E800"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Resident Evil - Director's Cut (Europe).bin"
+cue_name = "Resident Evil - Director's Cut (Europe).cue"
+boot_exe = "SLES_009.69"
+known_sizes = [713091120]
+known_md5 = [
+  "850b338d8bef853035315e98164bba4d",
+]
+known_sha1 = [
+  "8ce02b5d7d9c44562dd12012b9df5c2643cfdd14",
+]
+known_crc32 = [
+  "052fe98e",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "Resident Evil: Director's Cut Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "602a71864aafc1183e9e33a7124d88da0f96c76434d4adf1ff6f5cc562714e51"
+
+[pgo]
+enabled = false

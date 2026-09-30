@@ -1,0 +1,18 @@
+{
+  "disc_count": 1,
+  "verdict": "single",
+  "differing_program_fields": [],
+  "warnings": [],
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "Resident Evil - Director's Cut (Europe).cue",
+      "cue_path": "disc/Resident Evil - Director's Cut (Europe).cue",
+      "serial": "SLES-00969",
+      "boot_exe": "SLES_009.69",
+      "entry_pc": "0x8005F1B0",
+      "track_count": 1,
+      "required_disc_fp": "602a71864aafc1183e9e33a7124d88da0f96c76434d4adf1ff6f5cc562714e51"
+    }
+  ]
+}
