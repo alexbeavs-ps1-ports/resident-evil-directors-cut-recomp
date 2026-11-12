@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Resident Evil: Director's Cut",
+    "id": "SLES-00969",
+    "boot_exe": "SLES_009.69"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Resident Evil - Director's Cut (Europe).cue",
+    "bin_name": "Resident Evil - Director's Cut (Europe).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 713091120,
+      "md5": "850b338d8bef853035315e98164bba4d",
+      "sha1": "8ce02b5d7d9c44562dd12012b9df5c2643cfdd14",
+      "crc32": "052fe98e"
+    },
+    "disc_fp": "602a71864aafc1183e9e33a7124d88da0f96c76434d4adf1ff6f5cc562714e51"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x8005F1B0",
+    "text_size": "0x0009E800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 972,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
